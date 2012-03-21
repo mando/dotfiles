@@ -26,7 +26,7 @@ plugins=(git rails ruby nyan)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/mysql/bin:/Users/mando/Projects/setmaster/bin
 [[ -s "/Users/mando/.rvm/scripts/rvm" ]] && source "/Users/mando/.rvm/scripts/rvm"
 bindkey -v
 bindkey '^R' history-incremental-search-backward
