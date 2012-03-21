@@ -77,3 +77,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 "" Pathogen
 call pathogen#infect()
 call pathogen#helptags()
+
+"" Tcomment
+vnoremap ,c :TComment<cr>
+nmap ,c gcc
