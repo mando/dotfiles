@@ -1,3 +1,7 @@
 [user]
 	name = Mando Escamilla
 	email = mando@mando.org
+[core]
+	excludesfile = /Users/mando/.gitignore_global
+[push]
+	default = current
