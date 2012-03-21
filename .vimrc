@@ -77,6 +77,3 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 "" Pathogen
 call pathogen#infect()
 call pathogen#helptags()
-
-let g:tcommentMapLeaderOp1 = '<Leader>c'
-let g:tcommentMapLeaderOp2 = '<Leader>C'
