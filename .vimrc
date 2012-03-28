@@ -31,7 +31,8 @@ nnoremap k gk
 
 "" Invisibles
 set list
-set listchars=tab:▸\
+"set listchars=tab:▸\,extends:»,precedes:«,trail:▒,nbsp:
+set listchars=tab:→\ ,extends:»,precedes:«,trail:·
 
 "" Margin line numbers
 set number
@@ -50,7 +51,7 @@ set showcmd
 set hidden
 
 set wildmenu
-set wildmode=list:longest
+set wildmode=list:longest:full
 
 " what files to ignore when doing filename completion, etc.
 set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.class,.svn,*.gem
@@ -84,7 +85,7 @@ nmap ,c gcc
 
 set background=dark
 let g:solarized_termcolors=256
-colorscheme solarized
+colorscheme railscasts
 
 function! InsertTabWrapper()
     let col = col('.') - 1
@@ -97,3 +98,5 @@ endfunction
 
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
+
+set noswapfile
