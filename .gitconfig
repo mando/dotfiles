@@ -1,7 +1,15 @@
 [user]
-	name = Mando Escamilla
-	email = mando@mando.org
+  name = Mando Escamilla
+  email = mando@mando.org
 [core]
-	excludesfile = /Users/mando/.gitignore_global
+  excludesfile = /Users/mando/.gitignore_global
 [push]
-	default = current
+  default = upstream
+[alias]
+  recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(refname:short)'
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  shame = blame
+[rerere]
+  enabled = 1
+[color]
+  ui = auto
