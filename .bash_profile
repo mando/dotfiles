@@ -16,3 +16,16 @@ export PS1='${PINK}\h:${ORANGE}\w ${D}\n$ '
 
 # Aliases #
 source ~/.aliases
+
+# Set my histories
+export HISTSIZE=1000000000
+export HISTFILESIZE=1000000000
+
+# Never forget my history
+shopt -s histappend
+
+# Share my history
+export PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
+
+# Gimme some timestamps for my history
+export HISTTIMEFORMAT="%F %T "
