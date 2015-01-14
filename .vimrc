@@ -58,3 +58,12 @@ colorscheme jellybeans
 "" Tcomment
 vnoremap ,c :TComment<cr>
 nmap ,c gcc
+
+"" Gotta have line numbers
+set number
+
+"" Put undofiles in /tmp
+set undodir=/tmp
+
+"" No swapfile, no cry
+set noswapfile
