@@ -37,6 +37,9 @@ set wildignore+=vendor/gems/*,vendor/cache/*,.bundle/*,.sass-cache/*
 " Disable temp and backup files
 set wildignore+=*.swp,*~,._*
 
+" Make vim think files with md file extenion are markdown and not Modula-2
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
 set visualbell
 set ttyfast
 set ruler
