@@ -2,26 +2,18 @@
 set nocompatible
 syntax enable
 filetype off
+filetype plugin indent on
 
-"  VUNDLE CONFIG
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" Plug config
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-markdown'
+Plug 'airblade/vim-gitgutter'
 
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-markdown'
-Plugin 'airblade/vim-gitgutter'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+call plug#end()
 
 set encoding=utf-8
 
